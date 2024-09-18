@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 class="img-title" style="text-align: center;">Simple Image Editor</h2>
+    <div class="editor-container">
+        <div class="editor-body">
+            <div class="image-editor">
+                <div class="controls">
+                    <label>Brightness: <input type="range" id="brightness" min="0" max="200" value="100"></label>
+                    <label>Contrast: <input type="range" id="contrast" min="0" max="200" value="100"></label>
+                    <label>Saturation: <input type="range" id="saturation" min="0" max="200" value="100"></label>
+                    <label>Rotate: <input type="range" id="rotate" min="0" max="360" value="0"></label>
+                </div>
+            </div>
+            <div class="image">
+            <div class="image-area">
+                <canvas id="canvas"></canvas>
+            </div>
+                <input type="file" id="upload-button" accept="image/*">
+                <label for="upload-button" class="chooseBtn">Choose an Image</label>
+            </div>
+        </div>
+        <button id="download-button">Download Edited Image</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
